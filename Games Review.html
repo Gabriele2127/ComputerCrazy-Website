@@ -1,0 +1,371 @@
+<html>
+<head>
+<title>ComputerCrazy: Games Review</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+  font-family: Arial;
+  margin; 0;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+p {
+  color: black;
+}
+
+.PEGI {
+  line-height:0.6;
+}
+
+.box {
+  background-color: white;
+  border: 1px black;
+  margin: 5px;
+}
+
+.checked {
+  color:orange;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 507px 507px;
+  padding: 5px;
+}
+
+.grid-item {
+  padding: 18px 3px 12px;
+  border: 1px solid black;
+}
+
+.platform {
+  padding:3px;
+  border:1px ;
+}
+
+.button {
+  background-color: grey;
+  border: 1px solid black;
+  padding:2px 2px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+}
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.social-icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+ }
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+ }
+
+.social-icons a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    word-break: break-all;
+ }
+
+.social-icons  span  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-image: url( social-icons.png );
+ }
+
+.social-icons li:nth-child(2)  span {
+    background-position: -48px 0;
+ }
+
+.social-icons li:nth-child(3) span {
+    background-position: -96px 0;
+ }
+
+.social-icons li:nth-child(4) span {
+    background-position: 0 -48px;
+ }
+
+.social-icons li:nth-child(5) span  {
+    background-position: -48px -48px;
+ }
+
+.social-icons li:nth-child(6) span  {
+    background-position: -96px -48px;
+ }
+</style>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+</head>
+
+<body>
+
+<table bgcolor="red" width="1265" border="1">
+<tr>
+<td colspan="3" align="center" height= 5px>
+<div class="header">
+<img src="Screen Design/cc_banner_red.png" alt="Image unavailable" width="1250" height="100">
+<body onload="startTime()">
+<div id="txt"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<div class="topnav">
+  <a href="Home Page.html">Home</a>
+  <a href="Games Catalogue.html">Games Catalogue</a>
+  <a class="active">Games Review</a>
+  
+  <a href="Contact Us.html">Contact Us</a>
+<img src="Screen Design/search bar.png" width="320" height="30" style="background-color:red; padding-left:20px;">
+<a href="Basket.html"><img src="Screen Design/basket.png" width="30" height="30" style="background-color:red; padding-left:20px; padding-top:5px;">
+</a>
+</div>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<div class="box">
+  <div class="grid">
+  
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover2(MyImage2)
+ {
+         MyImage2.src = "Screen Design/forza1.jpg";
+
+    }
+        function MouseOut2(MyImage2) {
+                MyImage2.src = "Screen Design/ForzaHorizon4.jpg";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:7px"
+       onMouseOver="MouseRollover2(this)"
+       onMouseOut="MouseOut2(this)"/>
+      <div class="PEGI">
+        <p float="right">Forza Horizon 4 | <font size="1" color="#808080">PEGI Rating: Ages 3+ | 2018</font></p>
+        <p float="right" style="font-size:13.5px";><u>Professional Review</u>
+           <span style="float:right; padding-right:100px"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span></p>
+      </div>
+      <p float="right" style="font-size:12px";>Forza Horizon 4 is not only a bar-raising racing game, but an<br>
+exceptional sandbox experience that's set a new standard for<br>
+the presentation and implementation of shared open-worlds.<br>
+It's also the prettiest game to ever be powered by an<br>
+Xbox console.<br><br>
+Whether you're an automobile aficionado looking for your next<br>
+fix, a thrill-seeking fan of fast cars, or just someone who's<br>
+wondered what it's like to tear a pimped-out supercar through<br>
+the Lake District, Forza Horizon 4 is worth buckling-up for.</p>
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover3(MyImage3)
+ {
+         MyImage3.src = "Screen Design/tomb.jpg";
+
+    }
+        function MouseOut3(MyImage3) {
+                MyImage3.src = "Screen Design/Tomb Raider.jpg";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover3(this)"
+       onMouseOut="MouseOut3(this)"/>
+      <div class="PEGI">
+        <p float="right">Shadow of the Tomb Raider | <font size="1" color="#808080">PEGI Rating: Ages 3+ | 2018</font></p></p>
+	<p float="right" style="font-size:13.5px";><u>Professional Review</u>
+           <span style="float:right; padding-right:100px"; class="fa fa-star-half-o checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span></p>
+      </div>
+      <p float="right" style="font-size:12px";>With a story that manages to satisfactorily tread the line between high-concept fun and grounded character exploration, Shadow of the Tomb Raider meaningfully wraps up the journey Lara began in 2013 and convincingly leaves her in a place resembling where she was when we were first introduced to her more than 20 years ago. I would have liked a little more incentive to explore the beautiful world Eidos Montreal has created, but I’d much prefer too much content than too little. There’s so much to enjoy elsewhere in a game that’s stuffed to the brim with ideas and devilishly challenging puzzles. I can’t wait to see where Lara goes next.</p>
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover4(MyImage4)
+ {
+         MyImage4.src = "Screen Design/pubg1.jpg";
+
+    }
+        function MouseOut4(MyImage4) {
+                MyImage4.src = "Screen Design/PUBG.jpg";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover4(this)"
+       onMouseOut="MouseOut4(this)"/>
+      <div class="PEGI">
+        <p float="right" style="font-size:15px";>PLAYERUNKNOWN'S BATTLEGROUNDS </p>
+        <p float="right" style="color:grey";><font size="1">PEGI Rating: Ages 16+ | 2018</font></p>
+      </div>
+      <p float="right" style="font-size:13.5";><u>Professional Review</u>
+           <span style="float:right; padding-right:100px"; class="fa fa-star-half-o checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span></p>
+      <p float="right" style="font-size:12px";>PlayerUnknown’s Battlegrounds has taken the military-sim gameplay popularized by games like ARMA and DayZ, boiled it down to its most exciting parts, and streamlined it into quick and accessible rounds of pure, hassle-free, survival-based action. Even though each game starts the same way, its remarkable ability to feel like a new, tense adventure each and every round has kept me coming back for hours on end.</p>
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover6(MyImage6)
+ {
+         MyImage6.src = "Screen Design/gta.jpg";
+
+    }
+        function MouseOut6(MyImage6) {
+                MyImage6.src = "Screen Design/GTA 5.jfif";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover6(this)"
+       onMouseOut="MouseOut6(this)"/>
+      <div class="PEGI">
+        <p float="right">Grand Theft Auto IV | <font size="1" color="#808080">PEGI Rating: Ages 18+ | 2014</font></p>
+        <p float="right" style="font-size:13.5px";><u>Professional Review</u>
+           <span style="float:right; padding-right:100px"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span>
+           <span style="float:right"; class="fa fa-star checked"></span></p>
+      </div>
+      <p float="right" style="font-size:12px";>Grand Theft Auto 5 on Xbox One and PlayStation 4 is a masterwork for all the same reasons mentioned in our original Xbox 360 and PlayStation 3 review. Its world is a truly astonishing achievement in so many ways, and these two versions are currently the best way to experience it, aside from the hobbled multiplayer matchmaking. If you missed GTA 5 before, it’s absolutely a game that has to be played. Whether it’s worth buying a second time is entirely dependent on whether you’re interested in replaying the same game again – and only you can answer that. But I’m glad to have had a reason to revisit it, and am happy to find it even more impressive than it was before.</p>
+    </div>
+	
+  </div>
+</div>
+</td>
+
+<td width="210">
+<div class="box">
+<script language="javascript">
+        function MouseRollover(MyImage)
+ {
+         MyImage.src = "Screen Design/cyberpunk2.jpg";
+
+    }
+        function MouseOut(MyImage) {
+                MyImage.src = "Screen Design/cyberpunk.jpg";
+    }
+</script>
+<img src="MyPicture1.jpg" width="200" height="100" style="padding:5px 5px 20px 5px"
+onMouseOver="MouseRollover(this)"
+onMouseOut="MouseOut(this)"/>
+<h4 align="center" style="padding-top:10px";>Upcoming Games!</h4>
+<p style="text-indent:35px; padding-top:10px":> Cyberpunk 2077 </p>
+<p style="color:dimgrey; padding-left:10px";><font size="2"> PEGI Rating: Ages 18+  |  2020 </font></p>
+<p style="color:#202020; padding-left:10px; padding-bottom: 10px";><font size="2">This item will be released on 16 April 2020.<br><br>
+Pre-order now and get free delivery!.<br><br>
+Click here for more details.</p>
+<script language="javascript">
+        function MouseRollover1(MyImage1)
+ {
+         MyImage1.src = "Screen Design/cyberpunk3.jpg";
+
+    }
+        function MouseOut1(MyImage1) {
+                MyImage1.src = "Screen Design/cyberpunk1.jpg";
+    }
+</script>
+
+<img src="MyPicture2.JPG" width="200" height="100" style="padding: 5px; padding-top:43px"
+onMouseOver="MouseRollover1(this)"
+onMouseOut="MouseOut1(this)"/>
+</div>
+</td>
+
+<tr>
+<td colspan="3" align="center">
+<div class="footer">
+<ul class="social-icons">
+  <li><a href="https://www.instagram.com/">instagram<span></span></a></li>
+  <li><a href="https://in.pinterest.com/">pinterest<span></span></a></li>
+  <li><a href="https://youtube.com">youtube<span></span></a></li>
+  <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+  <li><a href="https://twitter.com/">twitter<span></span></a></li>
+  <li><a href="https://www.facebook.com/">facebook<span></span></a></li>
+ </ul>
+<img src="Screen Design/cc_footer_red.jpg" alt="Image unavailable" width="1250" height="50">
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

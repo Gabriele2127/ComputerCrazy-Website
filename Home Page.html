@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>ComputerCrazy: Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial;
+  margin; 0;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+p {
+  letter-spacing: 0.5px;
+  color: black;
+}
+
+.box {
+  background-color: white;
+  border: 1px black;
+  margin: 5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.box1 {
+  background-color: white;
+  border: 1px black;
+  margin: 5px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+}
+
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.social-icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+ }
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+ }
+
+.social-icons a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    word-break: break-all;
+ }
+
+.social-icons  span  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-image: url( social-icons.png );
+ }
+
+.social-icons li:nth-child(2)  span {
+    background-position: -48px 0;
+ }
+
+.social-icons li:nth-child(3) span {
+    background-position: -96px 0;
+ }
+
+.social-icons li:nth-child(4) span {
+    background-position: 0 -48px;
+ }
+
+.social-icons li:nth-child(5) span  {
+    background-position: -48px -48px;
+ }
+
+.social-icons li:nth-child(6) span  {
+    background-position: -96px -48px;
+ }
+</style>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+</head>
+
+<body>
+
+<table bgcolor="red" width="1265" border="1">
+<tr>
+<td colspan="3" align="center" height= 5px>
+<div class="header">
+<img src="Screen Design/cc_banner_red.png" alt="Image unavailable" width="1250" height="100">
+<body onload="startTime()">
+<div id="txt"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<div class="topnav">
+  <a class="active" href="Home Page.html"><u>Home</u></a>
+  <a href="Games Catalogue.html">Games Catalogue</a>
+  <a href="Games Review.html">Games Review</a>
+  
+  <a href="Contact Us.html">Contact Us</a>
+<img src="Screen Design/search bar.png" width="320" height="30" style="background-color:red; padding-left:20px;">
+<a href="Basket.html"><img src="Screen Design/basket.png" width="30" height="30" style="background-color:red; padding-left:20px; padding-top:5px;"></a>
+</div>
+</td>
+</tr>
+
+
+<tr valign="top">
+<td>
+<div class="box">
+<h4 align="center" style="padding-top:15px;"><font size="5">Computer Crazy: 'Crazy' by name, 'Crazy' by nature!</font></h4>
+<p align="justify">Sunil and Tom started 'Computer Crazy' 3 years ago in an attempt to have a 'one stop' shop where PC gaming enthusiasts<br>
+like themselves could find more challenging games. They found it annoying that the 'big' game retailers only stocked the main<br>
+stream games when they knew there were hundreds if not thousands of less well known, but no less enjoyable, games out there<br>
+in cyber space! So they opened a small shop near where they lived and started trawling the net for the less well known PC<br>
+games and started playing and reviewing them. Those they liked they bought and stocked in the shop!</p>
+
+<p align="justify">They started to build PCs that were fit to play these games! Not the flash boxes with fantastic names (and fantastic prices)<br>
+which did little more than light up like a Christmas tree. They wanted to build high performance PCs at reasonable prices which<br>
+knocked the socks off the ones available from the big chains. So that's what they did! And pretty soon the gaming community got to knowv
+about them.</p>
+
+<p align="justify">Now they have five shops, a large warehouse holding thousands of PC game titles and PC components, and thousands<br>
+of loyal customers. And now, with this new website you can join them whenever. Now they have five shops, a large warehouse<br>
+holding thousands of PC game titles and PC components, and thousands of loyal customers. And now, with this new website you<br>
+can join them whenever you are in the UK.</p>
+
+<p align="justify">So browse away, buy something if you want or just go to our review page and catch up with the latest releases. We would also<br>
+really like to hear from you so register for our newsletter and join our blogging community. Come on, get it off your chest!</p>
+
+<p align="justify" style="padding-left:15px";><b>Welcome to the world of 'Computer Crazy'!</b></font></p>
+
+<iframe width="445" height="200" style="padding-left:290px"; src="https://www.youtube.com/embed/Aj41sjx7sSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</td>
+
+<td width="210">
+<div class="box1">
+<script language="javascript">
+        function MouseRollover(MyImage)
+ {
+         MyImage.src = "Screen Design/cyberpunk2.jpg";
+
+    }
+        function MouseOut(MyImage) {
+                MyImage.src = "Screen Design/cyberpunk.jpg";
+    }
+</script>
+
+<img src="MyPicture1.JPG" width="200" height="100" style="padding:5px 5px 50px 5px"
+onMouseOver="MouseRollover(this)"
+onMouseOut="MouseOut(this)"/>
+<h4 align="center" style="padding-top:25px";>Upcoming Games!</h4>
+<p style="text-indent:35px; padding-top:30px":> Cyberpunk 2077 </p>
+<p style="color:dimgrey; padding-left:10px";><font size="2"> PEGI Rating: Ages 18+  |  2020 </font></p>
+<p style="color:#202020; padding-left:10px; padding-bottom: 10px";><font size="2">This item will be released on 16 April 2020.<br><br>
+Pre-order now and get free delivery!.<br><br>
+Click here for more details.</p>
+
+<script language="javascript">
+        function MouseRollover1(MyImage1)
+ {
+         MyImage1.src = "Screen Design/cyberpunk3.jpg";
+
+    }
+        function MouseOut1(MyImage1) {
+                MyImage1.src = "Screen Design/cyberpunk1.jpg";
+    }
+</script>
+
+<img src="MyPicture2.JPG" width="200" height="100" style="padding: 5px; padding-top:75px"
+onMouseOver="MouseRollover1(this)"
+onMouseOut="MouseOut1(this)"/>
+</div>
+</td>
+
+<tr>
+<td colspan="3" align="center">
+<div class="footer">
+<ul class="social-icons">
+  <li><a href="https://www.instagram.com/">instagram<span></span></a></li>
+  <li><a href="https://in.pinterest.com/">pinterest<span></span></a></li>
+  <li><a href="https://youtube.com">youtube<span></span></a></li>
+  <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+  <li><a href="https://twitter.com/">twitter<span></span></a></li>
+  <li><a href="https://www.facebook.com/">facebook<span></span></a></li>
+ </ul>
+<img src="Screen Design/cc_footer_red.jpg" alt="Image unavailable" width="1250" height="50">
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

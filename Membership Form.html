@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>ComputerCrazy: Membership Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial;
+  margin; 0;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+p {
+  
+  color: black;
+}
+
+.box {
+  background-color: white;
+  border: 1px black;
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item {
+  padding:18px 3px;
+  border: 1px solid black;
+}
+
+.contact {
+  padding:5px;
+  padding-left:30px;
+  float:left;
+}
+
+.contact1 {
+  float:left;
+  padding-left:90px;
+  padding-top:100px;
+}
+
+.preference {
+  float:left;
+}
+
+.platform {
+  padding:3px;
+  border:1px ;
+}
+
+.button {
+  background-color: grey;
+  border: 1px solid black;
+  padding:2px 2px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+}
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+
+<body>
+
+<table bgcolor="red" width="1265" border="1">
+<tr>
+<td colspan="3" align="center" height= 5px>
+<div class="header">
+
+<img src="Screen Design/cc_banner_red.png" alt="Image unavailable" width="1250" height="100">
+</div>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<div class="topnav">
+  <a href="Home Page.html">Home</a>
+  <a href="Games Shopping.html">Games Shopping</a>
+  <a href="Games Review.html">Games Review</a>
+  <a class="active" href="Membersip Form"><u>Membership Form</u></a>
+  <a href="Contact Us.html"><u>Contact Us</u></a>
+<img src="Screen Design/search bar.png" width="320" height="30" style="background-color:red; padding-left:20px;">
+<img src="Screen Design/basket.png" width="30" height="30" style="background-color:red; padding-left:20px; padding-top:5px;">
+</div>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<div class="box" style="height:545px";>
+<div class="contact">
+<h2>Membership Form</h2>
+
+<form action="">
+
+<label style="padding-right:29.5px";>First name: </label>
+<input type="text" name="FirstName">
+<br><br>
+
+
+<label style="padding-right:30.5px";>Last name: </label>
+<input type="text" name="LastName">
+<br><br>
+
+
+<label style="padding-right:0.5px";>Phone number: </label>
+<input type="tel" name="Phone">
+<br><br>
+
+
+<label style="padding-right:65.5px";>Email: </label>
+<input type="mail" name="Email">
+<br><br>
+
+
+<label style="padding-left: 20px";> Address </label><br>
+<label> Address Line 1: </label>
+<input type="text" name="AddressLine1"><br>
+
+<label> Address Line 2: </label>
+<input type="text" name="AddressLine2">
+<br>
+
+<label style="padding-right:40px";> Postcode: </label>
+<input type="text">
+<br><br>
+
+<label style="padding-right:40px";>Gender:</label>
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="other">Other
+<br><br>
+
+<label style="padding-right:75px";>Age:</label>
+<select name="Age">
+ <option value="under 16">under 10</option>
+ <option value="under 16">under 12</option>
+ <option value="under 16">under 14</option>
+ <option value="under 16">under 16</option>
+ <option value="under 16">under 18</option>
+ <option value="under 16">under 20</option>
+ <option value="under 16">under 22</option>
+ <option value="under 16">under 24</option>
+</select><br><br>
+
+<label>Monthly Newsletter : </label>
+<select name="letter">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+<br><br>
+
+<input style="position:absolute; left:650px; bottom:475px"; type="submit"><br><br>
+</div>
+
+<label style="position:absolute; padding-top:50px; padding-left:180px; font-size:20px";><b>Games Preference:</b></label>
+<div class="contact1">
+<div class="preference">
+<input type="checkbox" name="preference" value="fps">First Person Shooter
+<input type="checkbox" name="preference" value="racing">Racing
+<input style="margin-left:106px"; type="checkbox" name="preference" value="action">Action
+<br>
+<input type="checkbox" name="preference" value="open-world">Open World
+<input style="margin-left:66px"; type="checkbox" name="preference" value="adventure">Adventure
+<input style="margin-left:83px"; type="checkbox" name="preference" value="role">Role-Play
+<br>
+<input type="checkbox" name="preference" value="sports">Sports
+<input style="margin-left:105px"; type="checkbox" name="preference" value="tps">Third Person Shooter
+<input type="checkbox" name="preference" value="royale">Battle Royale
+<br>
+<input type="checkbox" name="preference" value="stealth">Stealth
+<input style="margin-left:101.5px"; type="checkbox" name="preference" value="MOBA">MOBA
+<input style="margin-left:109px"; type="checkbox" name="preference" value="all">All of the Above
+</div>
+</div>
+</div>
+</form>
+</div>
+</td>
+
+<td width="210">
+<div class="box">
+<img src="Screen Design/cyberpunk.jpg" width="200" style="padding:5px 5px 20px 5px";>
+<h4 align="center" style="padding-top:10px";>Upcoming Games!</h4>
+<p style="text-indent:35px; padding-top:10px":> Cyberpunk 2077 </p>
+<p style="color:dimgrey; padding-left:10px";><font size="2"> PEGI Rating: Ages 18+  |  2020 </font></p>
+<p style="color:#202020; padding-left:10px; padding-bottom: 10px";><font size="2">This item will be released on 16 April 2020.<br><br>
+Pre-order now and get free delivery!.<br><br>
+Click here for more details.</p>
+<img src="Screen Design/cyberpunk1.jpg" width="200" height="100" style="padding: 5px; padding-top:45px";>
+</div>
+</td>
+
+<tr>
+<td colspan="3" align="center">
+<div class="footer">
+<img src="Screen Design/cc_footer_red.jpg" alt="Image unavailable" width="1250" height="50">
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

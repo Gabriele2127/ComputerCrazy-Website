@@ -1,0 +1,436 @@
+﻿<html>
+<head>
+<title>ComputerCrazy: Games Catalogue</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial;
+  margin; 0;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+p {
+  
+  color: black;
+}
+
+.box {
+  background-color: white;
+  border: 1px black;
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item {
+  padding:18px 3px;
+  border: 1px solid black;
+}
+
+.platform {
+  padding:3px;
+  border:1px ;
+}
+
+.button {
+  background-color: grey;
+  border: 1px solid black;
+  padding:2px 2px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+}
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  //background-color: white;
+  color: black;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.social-icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+ }
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+ }
+
+.social-icons a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    word-break: break-all;
+ }
+
+.social-icons  span  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-image: url( social-icons.png );
+ }
+
+.social-icons li:nth-child(2)  span {
+    background-position: -48px 0;
+ }
+
+.social-icons li:nth-child(3) span {
+    background-position: -96px 0;
+ }
+
+.social-icons li:nth-child(4) span {
+    background-position: 0 -48px;
+ }
+
+.social-icons li:nth-child(5) span  {
+    background-position: -48px -48px;
+ }
+
+.social-icons li:nth-child(6) span  {
+    background-position: -96px -48px;
+ }
+</style>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+function checkCost()
+	/* This function checks which Games the user has selected and calculates the total
+	cost  for them */
+	{
+		var costs=[49.99, 49.99, 29.99, 29.99, 49.99, 22.99, 22.99, 26.99, 19.99, 19.99, 19.99, 24.99, 24.99, 24.99, 14.99, 14.99, 16.99];   // array holding costs for each treatment
+		var totalCost=0;
+		var Games = document.UserDetails.elements.Games;  // array holding the checkboxes
+	   for (var i=0; i<Games.length; i++)   // loops through each checkbox
+	   {     
+		   
+		   if (Games[i].checked) // treatment selected
+		   {            
+				totalCost=totalCost+costs[i];	// add cost of this treatment to total
+		   }    
+	   } 
+		alert("Total cost of these games will be £"+totalCost);  // display the total cost
+	}
+
+</script>
+
+</head>
+
+<body>
+
+<table bgcolor="red" width="1265" border="1">
+<tr>
+<td colspan="3" align="center" height= 5px>
+<div class="header">
+<img src="Screen Design/cc_banner_red.png" alt="Image unavailable" width="1250" height="100">
+<body onload="startTime()">
+<div id="txt"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<div class="topnav">
+  <a href="Home Page.html">Home</a>
+  <a href="Games Catalogue.html"><u>Games Catalogue</u></a>
+  <a href="Games Review.html">Games Review</a>
+  
+  <a href="Contact Us.html">Contact Us</a>
+<img src="Screen Design/search bar.png" width="320" height="30" style="background-color:red; padding-left:20px;">
+<a class="active" href="Basket.html"><img src="Screen Design/basket.png" width="30" height="30" style="background-color:white; padding-left:20px; padding-top:5px;">
+</a>
+</div>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<form name="UserDetails">
+<fieldset>
+<div class="box">
+  <div class="grid">  
+    <div class="grid-item">
+      <script language="javascript">
+        function MouseRollover2(MyImage2)
+ {
+         MyImage2.src = "Screen Design/forza1.jpg";
+
+    }
+        function MouseOut2(MyImage2) {
+                MyImage2.src = "Screen Design/ForzaHorizon4.jpg";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:7px"
+       onMouseOver="MouseRollover2(this)"
+       onMouseOut="MouseOut2(this)"/>
+      <p float="right">Forza Horizon 4</p>
+      <p float="right" style="color:grey";><font size="1">PEGI Rating: Ages 3+ | 2018</font></p>
+      <p float="right"><font size="2">Platforms:</p>
+      <p float="right" align="center">Xbox One | £49.99<br><br><br>
+       PC | £49.99</font></p>
+      <input type="checkbox" name="Games" value="Forza1" style="position:absolute; left:260px; top:350px;"/>
+      <input type="checkbox" name="Games" value="Forza2" style="position:absolute; left:260px; top:395px;"/>
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover3(MyImage3)
+ {
+         MyImage3.src = "Screen Design/tomb.jpg";
+
+    }
+        function MouseOut3(MyImage3) {
+                MyImage3.src = "Screen Design/Tomb Raider.jpg";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover3(this)"
+       onMouseOut="MouseOut3(this)"/>
+	  <p float="right" style="font-size:12.5px";>Shadow of the Tomb Raider</p>
+	  <p float="right" style="color:grey";><font size="1">PEGI Rating: Ages 18+ | 2018</font></p>
+	  <p float="right"><font size="2">Platforms:</p>
+	  <p float="right" align="center">Xbox One | £29.99<br><font size="1"><br></font><br>
+	   PlayStation 4 | £29.99<br><font size="1"><br></font><br>
+	   PC | £49.99</font></p>
+       <input type="checkbox" name="Games" value="Tomb" style="position:absolute; left:600px; top:342px;"/>
+       <input type="checkbox" name="Games" value="Tomb1" style="position:absolute; left:600px; top:382px;"/>
+       <input type="checkbox" name="Games" value="Tomb2" style="position:absolute; left:600px; top:422px;"/>
+       
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover4(MyImage4)
+ {
+         MyImage4.src = "Screen Design/pubg1.jpg";
+
+    }
+        function MouseOut4(MyImage4) {
+                MyImage4.src = "Screen Design/PUBG.jpg";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover4(this)"
+       onMouseOut="MouseOut4(this)"/>
+      <p float="right" style="font-size:12.5px";>PLAYERUNKNOWN'S<br>BATTLEGROUNDS</p>
+      <p float="right" style="color:grey";><font size="1">PEGI Rating: Ages 16+ | 2018</font></p>
+      <p float="right"><font size="2">Platforms:</p>
+      <p float="right" align="center">Xbox One | £22.99<br><font size="1"><br></font><br>
+      PlayStation 4 | £22.99<br><font size="1"><br></font><br>
+      PC | £26.99</font></p>
+      <input type="checkbox" name="Games" value="PUBG" style="position:absolute; left:935px; top:356px;"/>
+      <input type="checkbox" name="Games" value="PUBG1" style="position:absolute; left:935px; top:397px;"/>
+      <input type="checkbox" name="Games" value="PUBG2" style="position:absolute; left:935px; top:437px;"/>
+      
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover5(MyImage5)
+ {
+         MyImage5.src = "Screen Design/Minecraft1.jpg";
+
+    }
+        function MouseOut5(MyImage5) {
+                MyImage5.src = "Screen Design/Minecraft.jpg";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover5(this)"
+       onMouseOut="MouseOut5(this)"/>
+      <p float="right">Minecraft</p>
+      <p float="right" style="color:grey";><font size="1">PEGI Rating: Ages 7+ | 2009</font></p>
+      <p float="right"><font size="2">Platforms:</p>
+      <p float="right" align="center">Xbox One | £19.99<br><font size="1"><br></font><br>
+      PlayStation 4 | £19.99<br><font size="1"><br></font><br>
+      PC | £19.99</font></p>
+      <input type="checkbox" name="Games" value="MC" style="position:absolute; left:260px; top:617px;"/>
+      <input type="checkbox" name="Games" value="MC1" style="position:absolute; left:260px; top:658px;"/>
+      <input type="checkbox" name="Games" value="MC2" style="position:absolute; left:260px; top:700px;"/>
+      
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover6(MyImage6)
+ {
+         MyImage6.src = "Screen Design/gta.jpg";
+
+    }
+        function MouseOut6(MyImage6) {
+                MyImage6.src = "Screen Design/GTA 5.jfif";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover6(this)"
+       onMouseOut="MouseOut6(this)"/>
+      <p float="right">Grand Theft Auto IV</p>
+      <p float="right" style="color:grey";><font size="1">PEGI Rating: Ages 18+ | 2014</font></p>
+      <p float="right"><font size="2">Platforms:</p>
+      <p float="right" align="center">Xbox One | £24.99<br><font size="1"><br></font><br>
+      PlayStation 4 | £24.99<br><font size="1"><br></font><br>
+      PC | £24.99</font></p>
+      <input type="checkbox" name="Games" value="GTA" style="position:absolute; left:600px; top:617px;"/>
+      <input type="checkbox" name="Games" value="GTA1" style="position:absolute; left:600px; top:658px;"/>
+      <input type="checkbox" name="Games" value="GTA2" style="position:absolute; left:600px; top:700px;"/>
+      
+    </div>
+	
+    <div class="grid-item">
+<script language="javascript">
+        function MouseRollover7(MyImage7)
+ {
+         MyImage7.src = "Screen Design/rainbow.jpg";
+
+    }
+        function MouseOut7(MyImage7) {
+                MyImage7.src = "Screen Design/6 Siege.jfif";
+    }
+</script>
+      <img src="MyPicture1.jpg" height="230" width="150" style="float:left; padding-right:5px"
+       onMouseOver="MouseRollover7(this)"
+       onMouseOut="MouseOut7(this)"/>
+      <p float="right" style="font-size:15px";>Tom Clancy's Six Siege</p>
+      <p float="right" style="color:grey";><font size="1">PEGI Rating: Ages 18+ | 2015</font></p>
+      <p float="right"><font size="2">Platforms:</p>
+      <p float="right" align="center">Xbox One | £14.99<br><font size="1"><br></font><br>
+      PlayStation 4 | £14.99<br><font size="1"><br></font><br>
+      PC | £16.99</font></p>
+      <input type="checkbox" name="Games" value="Siege" style="position:absolute; left:935px; top:617px;"/>
+      <input type="checkbox" name="Games" value="Siege1" style="position:absolute; left:935px; top:658px;"/>
+      <input type="checkbox" name="Games" value="Siege2" style="position:absolute; left:935px; top:700px;"/>
+      
+    </div>
+  </div>
+<p float="left">Click Here To Check Total Cost:&nbsp&nbsp<input type="button" value="Check Cost" onclick="checkCost()"/></p>
+
+<p float="right" style="position:absolute; left:400px; bottom:180px";>What day would you prefer to come and collect?:</p>
+			<select name="days" style="position:absolute; left:770px; bottom:195px";>
+			<option value="mon">Monday</option>
+			<option value="tue">Tuesday</option>
+			<option value="wed" >Wednesday</option>
+			<option value="thurs">Thursday</option>
+			<option value="fri">Friday</option>
+			</select>
+</fieldset>
+</form>
+</div>
+</td>
+
+<td width="210">
+<div class="box">
+<script language="javascript">
+        function MouseRollover(MyImage)
+ {
+         MyImage.src = "Screen Design/cyberpunk2.jpg";
+
+    }
+        function MouseOut(MyImage) {
+                MyImage.src = "Screen Design/cyberpunk.jpg";
+    }
+</script>
+
+<img src="MyPicture1.JPG" width="200" height="100" style="padding:5px 5px 60px 5px"
+onMouseOver="MouseRollover(this)"
+onMouseOut="MouseOut(this)"/>
+<h4 align="center" ;>Upcoming Games!</h4>
+<p style="text-indent:35px; padding-top:10px":> Cyberpunk 2077 </p>
+<p style="color:dimgrey; padding-left:10px";><font size="2"> PEGI Rating: Ages 18+  |  2020 </font></p>
+<p style="color:#202020; padding-left:10px; padding-bottom: 10px";><font size="2">This item will be released on 16 April 2020.<br><br>
+Pre-order now and get free delivery!.<br><br>
+Click here for more details.</p>
+<script language="javascript">
+        function MouseRollover1(MyImage1)
+ {
+         MyImage1.src = "Screen Design/cyberpunk3.jpg";
+
+    }
+        function MouseOut1(MyImage1) {
+                MyImage1.src = "Screen Design/cyberpunk1.jpg";
+    }
+</script>
+
+<img src="MyPicture2.JPG" width="200" height="100" style="padding: 5px; padding-top:50px"
+onMouseOver="MouseRollover1(this)"
+onMouseOut="MouseOut1(this)"/>
+</div>
+</td>
+
+<tr>
+<td colspan="3" align="center">
+<div class="footer">
+<ul class="social-icons">
+  <li><a href="https://www.instagram.com/">instagram<span></span></a></li>
+  <li><a href="https://in.pinterest.com/">pinterest<span></span></a></li>
+  <li><a href="https://youtube.com">youtube<span></span></a></li>
+  <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+  <li><a href="https://twitter.com/">twitter<span></span></a></li>
+  <li><a href="https://www.facebook.com/">facebook<span></span></a></li>
+ </ul>
+<img src="Screen Design/cc_footer_red.jpg" alt="Image unavailable" width="1250" height="50">
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

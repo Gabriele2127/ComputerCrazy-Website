@@ -1,0 +1,292 @@
+<html>
+<head>
+<title>ComputerCrazy: Contact Us</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: Arial;
+  margin; 0;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  background: white;
+}
+
+p {
+  
+  color: black;
+}
+
+.box {
+  background-color: white;
+  border: 1px black;
+  margin: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.grid-item {
+  padding:18px 3px;
+  border: 1px solid black;
+}
+
+.contact {
+  padding:5px;
+  padding-left:30px;
+  float:left;
+}
+
+.platform {
+  padding:3px;
+  border:1px ;
+}
+
+.button {
+  background-color: grey;
+  border: 1px solid black;
+  padding:2px 2px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+}
+.topnav a {
+  float: center;
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.social-icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+ }
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+ }
+
+.social-icons a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    word-break: break-all;
+ }
+
+.social-icons  span  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-image: url( social-icons.png );
+ }
+
+.social-icons li:nth-child(2)  span {
+    background-position: -48px 0;
+ }
+
+.social-icons li:nth-child(3) span {
+    background-position: -96px 0;
+ }
+
+.social-icons li:nth-child(4) span {
+    background-position: 0 -48px;
+ }
+
+.social-icons li:nth-child(5) span  {
+    background-position: -48px -48px;
+ }
+
+.social-icons li:nth-child(6) span  {
+    background-position: -96px -48px;
+ }
+</style>
+
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+function validateForm() {
+  var x = document.forms["myForm"]["FirstName"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  var y = document.forms["myForm"]["LastName"].value;
+  if (y == "") {
+    alert("Last Name must be filled out");
+    return false;
+  }
+
+  var z = document.forms["myForm"]["Email"].value;
+  if (z == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  var q = document.form["myForm"]["Phone"].value;
+  if (q== "") {
+    alert("Phone number must be filled out");
+    return false;
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+<table bgcolor="red" width="1265" border="1">
+<tr>
+<td colspan="3" align="center" height= 5px>
+<div class="header">
+
+<img src="Screen Design/cc_banner_red.png" alt="Image unavailable" width="1250" height="100">
+<body onload="startTime()">
+<div id="txt"></div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<div class="topnav">
+  <a href="Home Page.html">Home</a>
+  <a href="Games Catalogue.html">Games Catalogue</a>
+  <a href="Games Review.html">Games Review</a>
+
+  <a class="active" href="Contact Us"><u>Contact Us</u></a>
+
+<img src="Screen Design/search bar.png" width="320" height="30" style="background-color:red; padding-left:20px;">
+<a href="Basket.html"><img src="Screen Design/basket.png" width="30" height="30" style="background-color:red; padding-left:20px; padding-top:5px;">
+
+</a></div>
+</td>
+</tr>
+
+<tr valign="top">
+<td>
+<div class="box" style="height:545px";>
+<div class="contact">
+<h2>Contact Us</h2>
+
+<h1> Thank you for submitting your form!</h1>
+</div>
+<iframe float="right" style="padding-left:0px; padding-top:60px; position:absolute" ;
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.5833794389096!2d-0.31271568422615365!3d51.61252187965252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876146c643e2bf5%3A0x5fa5358f7179b86e!2sStanmore%20College!5e0!3m2!1sen!2suk!4v1575295822584!5m2!1sen!2suk" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+</form>
+</div>
+</td>
+
+<td width="210">
+<div class="box">
+<script language="javascript">
+        function MouseRollover(MyImage)
+ {
+         MyImage.src = "Screen Design/cyberpunk2.jpg";
+
+    }
+        function MouseOut(MyImage) {
+                MyImage.src = "Screen Design/cyberpunk.jpg";
+    }
+</script>
+
+<img src="MyPicture1.JPG" width="200" height="100" style="padding:5px 5px 20px 5px"
+onMouseOver="MouseRollover(this)"
+onMouseOut="MouseOut(this)"/>
+<h4 align="center" style="padding-top:10px";>Upcoming Games!</h4>
+<p style="text-indent:35px; padding-top:10px":> Cyberpunk 2077 </p>
+<p style="color:dimgrey; padding-left:10px";><font size="2"> PEGI Rating: Ages 18+  |  2020 </font></p>
+<p style="color:#202020; padding-left:10px; padding-bottom: 10px";><font size="2">This item will be released on 16 April 2020.<br><br>
+Pre-order now and get free delivery!.<br><br>
+Click here for more details.</p>
+<script language="javascript">
+        function MouseRollover1(MyImage1)
+ {
+         MyImage1.src = "Screen Design/cyberpunk3.jpg";
+
+    }
+        function MouseOut1(MyImage1) {
+                MyImage1.src = "Screen Design/cyberpunk1.jpg";
+    }
+</script>
+
+<img src="MyPicture2.JPG" width="200" height="100" style="padding: 5px; padding-top:37px"
+onMouseOver="MouseRollover1(this)"
+onMouseOut="MouseOut1(this)"/>
+</div>
+</td>
+
+<tr>
+<td colspan="3" align="center">
+<div class="footer">
+<ul class="social-icons">
+  <li><a href="https://www.instagram.com/">instagram<span></span></a></li>
+  <li><a href="https://in.pinterest.com/">pinterest<span></span></a></li>
+  <li><a href="https://youtube.com">youtube<span></span></a></li>
+  <li><a href="https://plus.google.com/102689304172526656580">gplus<span></span></a></li>
+  <li><a href="https://twitter.com/">twitter<span></span></a></li>
+  <li><a href="https://www.facebook.com/">facebook<span></span></a></li>
+ </ul>
+<img src="Screen Design/cc_footer_red.jpg" alt="Image unavailable" width="1250" height="50">
+</div>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
